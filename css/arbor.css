@@ -1,0 +1,605 @@
+html, body{
+	width: 100%;
+	height: 100%;
+	margin:0;
+	padding: 0;
+	overflow-x: hidden; 
+}
+
+body{
+	font-family: 'Raleway', sans-serif;
+}
+
+
+ul#social li {
+    font-size: 30px;
+        padding: 5px;
+}
+
+/*scroll icon*/
+.icon-scroll,
+.icon-scroll:before {
+  position: absolute;
+  left: 50%;
+}
+
+.icon-scroll {
+  width: 40px;
+  margin-left: -20px;
+  top: 70%;
+  margin-top: -35px;
+  box-shadow: inset 0 0 0 1px #cce6ff;
+  border-radius: 25px;
+  height: 70px;
+}
+
+.icon-scroll:before {
+  content: '';
+  width: 8px;
+  height: 8px;
+  background: #cce6ff;
+  margin-left: -4px;
+  top: 8px;
+  border-radius: 4px;
+  -webkit-animation-duration: 1.5s;
+  animation-duration: 1.5s;
+  -webkit-animation-iteration-count: infinite;
+  animation-iteration-count: infinite;
+  -webkit-animation-name: scroll;
+  animation-name: scroll;
+}
+
+@-webkit-keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(46px);
+    transform: translateY(46px);
+  }
+}
+
+@keyframes scroll {
+  0% {
+    opacity: 1;
+  }
+  100% {
+    opacity: 0;
+    -webkit-transform: translateY(46px);
+    transform: translateY(46px);
+  }
+}
+
+@media only screen and (max-device-width: 768px) {
+  .icon-scroll {
+    height: 80px;
+    border-radius: 4px;
+  }
+  .icon-scroll:after {
+    content: '';
+    display: block;
+    width: 7px;
+    height: 7px;
+    margin: 1px auto 0 auto;
+    border: 1px solid #cce6ff;
+    border-radius: 50%;
+  }
+  .icon-scroll-screen {
+    position: relative;
+    width: 34px;
+    height: 56px;
+    margin: 10px auto 0;
+    border: 1px solid #cce6ff;
+  }
+  .icon-scroll:before {
+    top: 58px;
+  }
+  @-webkit-keyframes scroll {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translateY(-46px);
+      transform: translateY(-46px);
+    }
+  }
+  @keyframes scroll {
+    0% {
+      opacity: 1;
+    }
+    100% {
+      opacity: 0;
+      -webkit-transform: translateY(-46px);
+      transform: translateY(-46px);
+    }
+  }
+}
+
+/*
+=======================
+Hero Images
+=======================
+*/
+
+/*Banner*/
+
+/*.jumbotron.jumbotron-fluid {
+    background: url(../images/shapping.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    min-height: 770px;
+    position: relative;
+    color: #fff;
+}*/
+.jumbotron.jumbotron-fluid {
+    /*background: url(../images/shape.jpg) no-repeat 0px 0px;*/
+        background: url(../images/photovoltaic.jpg) no-repeat 0px 0px;
+    background-size: cover;
+    background-position: bottom;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    min-height: 100vh;
+    position: relative;
+    color: #fff;
+}
+
+.jumbotron.jumbotron-fluid::before {
+    content: '';
+    position: absolute;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0;
+    /*background-image: linear-gradient(to bottom right,#002f4b,#dc4225);*/
+       /* background-image: linear-gradient(to right, #4ac29a, #bdfff3);*/
+       background-image: linear-gradient(to right, #373b44, #4286f4);
+         background-image: #373b44; /* fallback for old browsers */
+         background-image: -webkit-linear-gradient(to right, #373b44, #4286f4);
+    opacity: .6;
+}
+h1.display-4 {
+    color: #fff;
+    opacity: 0.8;
+}
+h2.lead {
+    color: #fff;
+    opacity: 0.8;
+}
+
+/*main text*/
+
+.main {
+    padding: 18em 0em 0em;
+    font-weight: 700;
+    text-align: center;
+}
+
+
+/*
+==================
+Welcome area
+===================
+*/
+section.welcome {
+    background-color: #3cfac0 !important;
+    margin-top: -33px;
+    padding: 75px;
+        text-align: center;
+}
+
+section.welcome {
+    background-color: #3cfac0 !important;
+    margin-top: -33px;
+    padding: 75px;
+    text-align: center;
+    background: linear-gradient(to right, #11998e, #38ef7d);
+}
+
+.home h2 {
+    /*white-space: pre-wrap;*/
+    color: #333;
+    font-weight: 100;
+}
+
+.btn-group-lg>.btn, .btn-lg {
+    color: #333;
+    padding: .6rem 2rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5;
+    border-radius: .3rem;
+    border-radius: 25px;
+    background-color: #DDDFE1;
+}
+
+/*
+=========================
+about
+==========================
+*/
+section.about {
+    padding: 25px;
+        margin-bottom: 65px;
+}
+
+section.about h3 {
+    margin-left: 8%;
+    font-weight: 100;
+}
+
+hr {
+    background: #3cfac0;
+    /*width: 130px;*/
+    width: 170px;
+    height: 20px;
+    /*margin-right: 150%;*/
+    margin-right:79%;
+}
+
+/*boxes*/
+/*.row.justify-content-center {
+    margin-bottom: 15px;
+}*/
+div#Route {
+    background: #ccc;
+    color: #fff;
+    height: 300px;
+    border: 2px #3cfac0 solid;
+    background-image: url(../images/home-commercial.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+div#Startups {
+    background: #333;
+    color: #fff;
+    height: 300px;
+    border: 2px #3cfac0 solid;
+    /*margin-left: 15px;*/
+            background-image: url(../images/solar-street.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+div#Opinions {
+    background: #333;
+    color: #fff;
+    height: 300px;
+    border: 2px #3cfac0 solid;
+    /*margin-left: 15px;*/
+            background-image: url(../images/opinion.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+div#ContactUs {
+    background: #ccc;
+    color: #fff;
+    height: 300px;
+    border: 2px #3cfac0 solid;
+    background-image: url(../images/contact.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+
+
+
+
+div#Founders {
+    background: #ccc;
+        color: #fff;
+    height: 400px;
+    border: 2px #3cfac0 solid;
+    background-image: url(../images/solar-installation.jpg);
+    background-size: cover;
+    background-position: center;
+}
+
+div#Diferent {
+    background: #00A651;
+    background-image: url(../images/bulb1.jpg);
+    background-size: cover;
+    background-position: center;
+    color: #fff;
+    /* margin-left: 15px; */
+    border: 2px #3cfac0 solid;
+}
+
+div#Us {
+    background: #ccc;
+    color: #fff;
+    height: 400px;
+    border: 2px #3cfac0 solid;
+        background-image: url(../images/Contact_Us_Pic.jpg);
+    background-size: cover;
+    background-position: center;
+    /*margin-left: 15px;*/
+}
+
+div#Lessons {
+    background: #333;
+    color: #fff;
+    border: 2px #3cfac0 solid;
+    /*margin-left: 15px;*/
+    /*margin-top: 15px;*/
+}
+
+/*
+==========================
+Projects made
+==========================
+
+*/
+
+div#project-banner {
+    background-image: url(../images/projectbanner.jpg);
+    background-size: cover;
+    -webkit-background-size: cover;
+    -moz-background-size: cover;
+    -o-background-size: cover;
+    -ms-background-size: cover;
+    min-height: 250px;
+    text-align: center;
+    color: #fff;
+}
+
+div#project-banner h1 {
+    padding-top: 90px;
+}
+
+
+h1.project-head {
+    font-size: 40px;
+    color: #86c724;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 4px;
+    text-transform: uppercase;
+    text-align: center;
+}
+
+h1.project-head span {
+    color: #212121;
+}
+
+div#left-description {
+    background-color: #333;
+    color: #fff;
+        margin-top: 1em;
+        padding: 78px;
+}
+
+
+div#left-description ul {
+    margin: 1em 0 0 0;
+    padding: 0;
+    text-align: left;
+}
+
+ div#left-description  ul li {
+    color: #fff;
+    margin-bottom: .5em;
+    display: block;
+}
+
+
+div#right-description {
+    padding: 0;
+        margin-top: 1em;
+}
+
+/*
+============
+Footer b
+=============
+*/
+
+.footer-b {
+    background: #0f1215;
+    padding: 5em 0 0;
+    /*margin-top: 25px;*/
+}
+
+div#footer-alt {
+    border-left: 1px solid #fff;
+    /*border-right: 1px solid #fff;*/
+    padding: 0 56px;
+}
+
+div#footer-alt h3 {
+    font-size: 22px;
+    color: #86c724;
+    font-weight: 600;
+    margin-bottom: 20px;
+    letter-spacing: 2px;
+    text-transform: uppercase;
+}
+
+div#footer-alt h3 span {
+    color: #fff;
+}
+
+div#footer-alt ul {
+    padding: 0;
+    margin: 0;
+}
+
+ul#address li {
+    padding: 15px;
+}
+
+
+div#footer-alt ul li {
+    display: block;
+    text-align: left;
+    color: #fff;
+}
+
+ul#links li {
+    padding: 5px;
+}
+
+div#footer-alt ul li {
+    list-style-type: none;
+    margin-bottom: .5em;
+    font-size: 16px;
+    line-height: 1.7em;
+    color: #fff;
+    padding-left: 1em;
+}
+
+div#footer-alt ul li a {
+    color: #fff;
+}
+
+div#footer-alt p {
+    color: #fff;
+}
+
+
+form.newsletter input {
+    margin-top: 5px;
+    width: 100%;
+        padding: 5px;
+}
+.form-group {
+    /* margin-bottom: 1rem; */
+    margin-top: 5px;
+}
+
+button.btn-send.submit-botton {
+    background-color: #86c724;
+    top: 0;
+    right: 0;
+    outline: none;
+    border: none;
+    border-radius: 25px;
+    padding: 15px;
+}
+
+
+
+.copyrights {
+    color: #fff;
+    padding: 1em 0;
+    border-top: 1px solid #fff;
+    margin: 3em 0 0;
+    width: 100%;
+    text-align: center;
+}
+
+/*
+============
+Footer
+=============
+*/
+
+section.footer {
+    padding: 20px 0;
+    background-color: #DDDFE1;
+    background-image: url(https://solarlighting.com/wp-content/themes/carmanah/assets/images/bg-footer.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: top;
+    color: #333;
+}
+ul.icons>li {
+    display: inline-block;
+    list-style: none;
+        font-size: 25px;
+}
+dl, ol, ul {
+    margin-top: 0;
+    margin-bottom: 1rem;
+    text-align: end;
+}
+
+p.copy {
+    margin-top: 15px;
+
+}
+
+h1.content {
+    background: rgb(0, 0, 0);
+    background: rgba(0, 0, 0, 0.5);
+    color: #f1f1f1;
+    width: 100%;
+    padding: 20px;
+        display: table-caption;
+}
+
+
+
+
+section.commercial {
+    margin-top: -35px;
+    background-color: #272e34;
+    color: #fff;
+    padding-top: 25px;
+        padding: 55px;
+}
+
+div#elements {
+    padding-top: 35px;
+        text-align: center;
+}
+
+img#icon {
+    margin-bottom: 25px;
+    width: 150px;
+    height: 80px;
+}
+
+#btn {
+    color: #fff;
+    padding: .6rem 2rem;
+    font-size: 1.25rem;
+    font-weight: 700;
+    line-height: 1.5;
+    border-radius: .3rem;
+    border-radius: 25px;
+    background-color: transparent;
+}
+
+h5.copy {
+    text-align: center;
+}
+
+ul.listing>li {
+    display: inline-block;
+    list-style: none;
+    margin-right: 25px;
+}
+
+h1#second {
+    font-size: 2.5rem;
+}
+
+
+
+
+
+
+
+/*btn n each box*/
+div#Startups:hover #box {
+    display: block;
+}
+
+
+
+#box {
+    z-index: 2;
+    top: 54px;
+    display: none;
+    left: 59px;
+    width: 80%;
+}
